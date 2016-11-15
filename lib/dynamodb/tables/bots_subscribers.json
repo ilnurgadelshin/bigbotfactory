@@ -1,0 +1,27 @@
+{
+    "TableName": "BotsSubscribers",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "bot_id"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "chat_id"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "chat_id",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "bot_id",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 25,
+        "ReadCapacityUnits": 25
+    }
+}

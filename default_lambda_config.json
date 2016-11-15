@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "description": "no description",
+  "region": "eu-central-1",
+  "handler": "",
+  "role": "arn:aws:iam::1111:role/lambda_basic_execution",
+  "requirements": [],
+  "ignore": [
+    "/*.yaml",
+    "/*.json",
+    ".git",
+    "/*.pyc"
+  ],
+  "timeout": 30,
+  "memory": 128
+}

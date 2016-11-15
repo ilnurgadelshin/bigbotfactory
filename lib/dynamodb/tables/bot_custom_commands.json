@@ -1,0 +1,49 @@
+{
+    "TableName": "BotCustomCommands",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "bot_id"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "command_id"
+        }
+    ],
+    "LocalSecondaryIndexes": [
+        {
+            "IndexName": "parent_id-index",
+            "KeySchema": [
+                {
+                    "AttributeName": "bot_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "parent_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "Projection": {
+                "ProjectionType": "ALL"
+            }
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "bot_id",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "command_id",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "parent_id",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 25,
+        "ReadCapacityUnits": 25
+    }
+}

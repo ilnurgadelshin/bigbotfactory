@@ -1,0 +1,4 @@
+flask==0.10.1
+flask_restful==0.3.5
+tornado==4.2
+python-cjson==1.1.0

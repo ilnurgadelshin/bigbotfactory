@@ -1,0 +1,27 @@
+{
+    "TableName": "BotChannels",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "bot_id"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "channel"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "bot_id",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "channel",
+            "AttributeType": "S"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 25,
+        "ReadCapacityUnits": 25
+    }
+}

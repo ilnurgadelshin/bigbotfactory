@@ -1,0 +1,19 @@
+{
+    "TableName": "BotState",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "bot_id"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "bot_id",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 25,
+        "ReadCapacityUnits": 25
+    }
+}

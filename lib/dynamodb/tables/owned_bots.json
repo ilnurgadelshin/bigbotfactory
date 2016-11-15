@@ -1,0 +1,27 @@
+{
+    "TableName": "OwnedBots",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "chat_id"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "bot_id"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "bot_id",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "chat_id",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 25,
+        "ReadCapacityUnits": 25
+    }
+}

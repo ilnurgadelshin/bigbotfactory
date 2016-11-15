@@ -1,0 +1,27 @@
+{
+    "TableName": "ScheduledAsyncJobs",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "async_id"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "timestamp"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "async_id",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "timestamp",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 25,
+        "ReadCapacityUnits": 25
+    }
+}

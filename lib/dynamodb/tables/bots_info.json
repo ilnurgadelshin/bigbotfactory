@@ -1,0 +1,20 @@
+  {
+    "TableName": "BotsInfo",
+    "KeySchema": [
+      {
+        "AttributeName": "bot_id",
+        "KeyType": "HASH"
+      }
+    ],
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "bot_id",
+        "AttributeType": "N"
+      }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 25,
+      "WriteCapacityUnits": 25
+    }
+  }
+
