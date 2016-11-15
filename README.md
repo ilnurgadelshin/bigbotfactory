@@ -1,4 +1,4 @@
-# [BigBotFactory]
+# BigBotFactory
 
 BigBotFactory is now open source! Take all advantages of creating your own bot constructor platform for telegram messenger.
 
