@@ -1,4 +1,5 @@
 # BigBotFactory
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 BigBotFactory is now open source! Take all advantages of creating your own bot constructor platform for telegram messenger.
 
